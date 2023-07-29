@@ -1,0 +1,142 @@
+@import "../../css-config/mixins.scss";
+
+.single-page-content
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    @include md {
+        padding: 40px 0px;
+    }
+    .layout
+    {
+        .single-product-page
+        {
+            max-width: 1200px;
+            margin: 0 auto;
+            .left
+            {
+                background-color: rgba(0,0,0,0.05);
+               img{
+                width: 100%;
+               }
+            }
+            .right
+            {
+                display: flex;
+                flex-direction: column;
+                .name
+                {
+                    font-size: 24px;
+                    font-weight: bold;
+                    text-align: justify;
+                    margin-bottom: 30px;
+                    @include md {
+                        font-size: 30px;
+                        margin-bottom: 45px;
+                    }
+                }
+                .price
+                {
+                    font-size: 24px;
+                    margin-bottom: 15px;
+                    @include md {
+                        font-size: 30px;
+                        margin-bottom: 25px;
+                    }
+                }
+                .desc
+                {
+                    color: #6b6b6b;
+                    line-height: 20px;
+                    font-size: 14px;
+                    margin-bottom: 20px;
+                    @include md{
+                        font-size: 16px;
+                        margin-bottom: 30px;
+                        line-height: 24px;
+                    }
+                }
+                .cart-buttons
+                {
+                    display: flex;
+                    @include md{
+                        margin-top: 20px;
+                    }
+                    .quantity-buttons
+                    {
+                        width: fit-content;
+                        display: flex;
+                        border: 2px solid rgba(0,0,0,0.2);
+                        margin-right: 10px;
+                        height: 50px;
+                        span{
+                            font-size: 18px;
+                            width: 40px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            cursor: pointer;
+                            color: #6b6b6b;
+                            &:nth-child(1)
+                            {
+                                border-right: 2px solid rgba(0,0,0,0.2);
+                            }
+                            &:nth-child(2)
+                            {
+                                width: 60px;
+                            }
+                            &:nth-child(3)
+                            {
+                                border-left: 2px solid rgba(0,0,0,0.2);
+                            }
+                        }
+                    }
+                    .add-to-cart-button
+                    {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border: none;
+                        width: 180px;
+                        height: 50px;
+                        cursor: pointer;
+                        font-size: 16px;
+                        color: white;
+                        background-color: #8e2de2;
+                        border-bottom: 3px solid #6516aa;
+                    }
+                }
+                .divider
+                {
+                    margin: 20px 0;
+                    height: 1px;
+                    width: 100%;
+                    background-color: rgba(0,0,0,0.1);
+                }
+                .info-item
+                {
+                    .text-bold
+                    {
+                        font-size: 18px;
+                        font-weight: 500;
+                        display: block;
+                        &:nth-child(1)
+                        {
+                            margin-bottom: 20px;
+                        }
+                        span{
+                            font-size: 16px;
+                            font-weight: 400;
+                            cursor: pointer;
+                            color: #6b6b6b;
+                        }
+                        svg
+                        {
+                            margin: 0 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

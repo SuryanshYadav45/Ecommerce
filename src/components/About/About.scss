@@ -1,0 +1,34 @@
+@import "../../css-config/mixins.scss";
+
+.aboutdiv {
+  padding: 10px ;  
+  max-width: 1200px;
+  margin: 0 auto;
+ 
+  h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    @include md{
+        margin-bottom: 20px;
+    }
+    &:after {
+        display:block;
+        content: "";
+        width: 60px;
+        height: 4px;
+        top: 5px;
+        background-color: #8e2de2;
+      }
+  }
+  
+  p{
+    color: #6b6b6b;
+    margin-top: 10px;
+    text-align: justify;
+    @include md{
+        font-size: 19px;
+    }
+  }
+  
+}

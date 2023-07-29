@@ -1,0 +1,43 @@
+@import "../../../css-config/mixins.scss";
+
+.showProduct{
+    max-width: 1200px;
+    margin: 0 auto;
+    @include md{
+        padding: 0px 10px;
+    }
+    .topdiv
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px ;
+        h2{
+            // padding: 10px 0 20px 0;
+            font-size: 18px;
+            text-transform: uppercase;
+            
+            &:after {
+                display:block;
+                content: "";
+                width: 60px;
+                height: 4px;
+                top: 5px;
+                background-color: #8e2de2;
+              }
+              span {
+                color: #8e2de2;
+              };
+    }
+    
+    }
+    .listedproducts
+    {
+        display: flex;
+        flex-flow: wrap;
+        gap: 5px;
+        @include md{
+            gap: 15px;
+        }
+    }
+}

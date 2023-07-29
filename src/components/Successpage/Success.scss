@@ -1,0 +1,28 @@
+@import "../../css-config/mixins.scss";
+.successdiv
+{
+    max-width: 1200px;
+    height: 60vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    h1{
+        font-weight: 600;
+        color: rgb(29, 141, 29);
+        @include md{
+            font-size: 48px;
+            margin: 10px 0;
+        }
+    }
+    button{
+        margin: 10px 0px;
+        width: 160px;
+        text-transform:capitalize;
+        color: white;
+        height: 50px;
+        background-color: #8e2de2;
+        border: none;
+    }
+}

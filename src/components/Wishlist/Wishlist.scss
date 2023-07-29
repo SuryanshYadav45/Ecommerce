@@ -1,0 +1,97 @@
+@import "../../css-config/mixins.scss";
+
+.wishlist-products
+{
+    min-height: 50vh;
+    max-width: 1200px;
+    padding: 0 10px;
+    margin: 0 auto;
+    .emptyWishlist
+    {
+        min-height: 95vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        svg{
+            font-size: 160px;
+            color: rgba(0,0,0,0.2);
+            @include md{
+                font-size: 200px;
+            }
+        }
+        h1{
+            text-transform: capitalize;
+            font-size: 20px;
+            color: rgba(0,0,0,0.8);
+            @include md{
+                font-size: 30px;
+            }
+        }
+        button{
+            width: 180px;
+            height: 50px;
+            border: none;
+            background-color: #8e2de2;
+            color: white;
+            text-transform: uppercase;
+            margin-top: 40px;
+            border-bottom: 3px solid #6516aa;
+        }
+    }
+    .wishlist-product
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid rgba(0,0,0,0.1);
+        border-radius: 10px ;
+        margin-bottom: 20px;
+        padding: 0px 5px;
+        .img-container
+        {
+            img{
+                width: 120px;
+                height: 120px;
+            }
+        }
+        .proddetails
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-size: 12px;
+            .prodname
+            {
+            width: 200px; 
+            white-space: nowrap;
+            overflow: hidden; 
+            text-overflow: ellipsis;
+            text-align: center;
+            @include md{
+                font-size: 20px;
+            }
+            }
+            .prodprice
+            {
+                font-size: 16px;
+                span{
+                    color: #8e2de2;
+                    font-size:20px;
+                }
+            }
+        }
+        .removebtn
+        {
+            svg
+            {
+                font-size: 25px;
+            }
+        }
+        &:hover{
+            background-color: rgba(0,0,0,0.05);
+        }
+    }
+    
+}

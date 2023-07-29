@@ -1,0 +1,96 @@
+@import "../../css-config/mixins.scss";
+
+.footer {
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    .about {
+        margin-bottom: 20px;
+      h6 {
+        @include md {
+          font-size: 25px;
+        }
+      }
+      p {
+        color: rgba(0, 0, 0, 0.5);
+      }
+    }
+    .contact
+    {
+        margin-bottom: 20px;
+        h6{
+            @include md {
+                font-size: 25px;
+              }
+        }
+        .c-item
+        {
+            display: flex;
+            margin-bottom: 15px;
+            color: rgba(0,0,0,0.5);
+            svg{
+                flex-shrink: 0;
+                font-size: 15px;
+                margin-right: 10px;
+                margin-top: 5px;
+            }
+        }
+        
+    }
+    .categories
+    {
+        margin-bottom: 20px;
+        h6{
+            @include md {
+                font-size: 25px;
+              }
+        }
+        .text
+        {
+            display: block;
+            margin-bottom: 15px;
+            cursor: pointer;
+            color: rgba(0, 0, 0, 0.5);
+        }
+    }
+    .pages
+    {
+        margin-bottom: 20px;
+        h6{
+            @include md {
+                font-size: 25px;
+              }
+        }
+        .text
+        {
+            display: block;
+            margin-bottom: 15px;
+            cursor: pointer;
+            color: rgba(0, 0, 0, 0.5);
+        }
+    }
+    
+  }
+  .bottom-bar
+  {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+    .bottom-bar-content
+    {
+        @include md{
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content:space-between ;
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+    .text{
+        margin-bottom: 10px;
+    }
+    img{
+        padding-bottom: 15px;
+    }
+  }
+}
